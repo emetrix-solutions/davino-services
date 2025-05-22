@@ -25,7 +25,7 @@ const Hero = () => {
           <Button className="text-white bg-accent-600 hover:bg-accent-700 px-8 py-6 text-lg" size="lg" asChild>
             <a href="#estimate">Request Estimate</a>
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg" size="lg" asChild>
+          <Button variant="outline" className="border-white text-black bg-white hover:bg-white/90 px-8 py-6 text-lg" size="lg" asChild>
             <a href="#services">
               Our Services
               <ArrowRight className="ml-2 h-5 w-5" />

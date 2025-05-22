@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4 font-display">Elite Builders</h3>
+            <h3 className="text-white text-lg font-semibold mb-4 font-display">Davino Services Concrete & Excavation</h3>
             <p className="mb-6">
               Transforming spaces with quality construction and exceptional craftsmanship for over 40 years.
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-accent-500" />
-                <a href="mailto:info@elitebuilders.com" className="hover:text-accent-500 transition-colors">info@elitebuilders.com</a>
+                <a href="mailto:info@davinoservices.com" className="hover:text-accent-500 transition-colors">info@davinoservices.com</a>
               </li>
             </ul>
           </div>
@@ -121,7 +121,7 @@ const Footer = () => {
         
         <div className="text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Elite Builders. All rights reserved.
+            © {new Date().getFullYear()} Davino Services Concrete & Excavation. All rights reserved.
           </p>
         </div>
       </div>
