@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
             ref={contentRef}
             className="animate-on-scroll"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-display heading-underline">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-display heading-underline text-black">
               Why Choose Elite Builders
             </h2>
             <p className="text-lg text-gray-700 mb-6">
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
                   <div className="flex-shrink-0 h-6 w-6 rounded-full bg-accent-100 flex items-center justify-center mr-3">
                     <Check className="h-4 w-4 text-accent-600" />
                   </div>
-                  <p className="text-gray-600">{feature}</p>
+                  <p className="text-gray-800">{feature}</p>
                 </div>
               ))}
             </div>
@@ -104,7 +104,7 @@ const WhyChooseUs = () => {
           
           {/* Project Carousel Section */}
           <div className="animate-on-scroll">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 font-display">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 font-display text-black">
               Our Featured Projects
             </h3>
             
@@ -112,7 +112,7 @@ const WhyChooseUs = () => {
               <CarouselContent>
                 {projects.map((project) => (
                   <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-gray-200 overflow-hidden h-full">
+                    <Card className="border-gray-200 overflow-hidden h-full bg-white">
                       <div className="h-48 overflow-hidden">
                         <AspectRatio ratio={16 / 9}>
                           <img 
@@ -123,7 +123,7 @@ const WhyChooseUs = () => {
                         </AspectRatio>
                       </div>
                       <CardContent className="p-4">
-                        <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
+                        <h4 className="text-xl font-semibold mb-2 text-black">{project.title}</h4>
                         <p className="text-gray-600 text-sm mb-4">{project.description}</p>
                         <CardDescription className="bg-accent-50 border-l-4 border-accent-500 p-3 italic">
                           "{project.insight}"
@@ -149,7 +149,7 @@ const WhyChooseUs = () => {
                 "Elite Builders transformed our vision into reality with exceptional attention to detail and professionalism. They weren't just contractors; they were partners in our project."
               </blockquote>
               <div className="mt-4">
-                <p className="font-semibold">Michael Johnson</p>
+                <p className="font-semibold text-black">Michael Johnson</p>
                 <p className="text-sm text-gray-500">Commercial Client</p>
               </div>
             </div>

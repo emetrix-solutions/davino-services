@@ -59,7 +59,7 @@ const EstimateForm = () => {
   };
 
   return (
-    <section id="estimate" className="py-20 bg-construction-900 text-white">
+    <section id="estimate" className="py-20 bg-black text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 font-display text-center">
@@ -80,7 +80,7 @@ const EstimateForm = () => {
                   onChange={handleChange}
                   placeholder="Your name"
                   required
-                  className="bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                  className="bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
                 />
               </div>
               
@@ -96,7 +96,7 @@ const EstimateForm = () => {
                     onChange={handleChange}
                     placeholder="your.email@example.com"
                     required
-                    className="pl-10 bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                    className="pl-10 bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
                   />
                 </div>
               </div>
@@ -111,7 +111,7 @@ const EstimateForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="(123) 456-7890"
-                    className="pl-10 bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                    className="pl-10 bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
                   />
                 </div>
               </div>
@@ -119,12 +119,12 @@ const EstimateForm = () => {
               <div className="space-y-2">
                 <Label htmlFor="projectType">Project Type</Label>
                 <Select onValueChange={handleSelectChange} value={formData.projectType}>
-                  <SelectTrigger className="bg-construction-800 border-construction-700 focus:border-accent-500 text-white">
+                  <SelectTrigger className="bg-construction-950 border-construction-800 focus:border-accent-500 text-white">
                     <SelectValue placeholder="Select project type" />
                   </SelectTrigger>
-                  <SelectContent className="bg-construction-800 border-construction-700">
+                  <SelectContent className="bg-construction-950 border-construction-800">
                     {projectTypes.map((type) => (
-                      <SelectItem key={type} value={type} className="focus:bg-construction-700">
+                      <SelectItem key={type} value={type} className="focus:bg-construction-900">
                         {type}
                       </SelectItem>
                     ))}
@@ -142,7 +142,7 @@ const EstimateForm = () => {
                     type="date"
                     value={formData.startDate}
                     onChange={handleChange}
-                    className="pl-10 bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                    className="pl-10 bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
                   />
                 </div>
               </div>
@@ -155,7 +155,7 @@ const EstimateForm = () => {
                   value={formData.budget}
                   onChange={handleChange}
                   placeholder="$"
-                  className="bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                  className="bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
                 />
               </div>
             </div>
@@ -169,7 +169,7 @@ const EstimateForm = () => {
                 onChange={handleChange}
                 placeholder="Tell us about your project..."
                 rows={5}
-                className="bg-construction-800 border-construction-700 focus:border-accent-500 text-white"
+                className="bg-construction-950 border-construction-800 focus:border-accent-500 text-white"
               />
             </div>
 

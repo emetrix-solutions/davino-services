@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-construction-900 to-construction-800">
+    <section className="py-16 bg-gradient-to-r from-black to-construction-900">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
           Ready to Start Your Construction Project?

@@ -24,13 +24,13 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white bg-opacity-95 shadow-md py-2"
+          ? "bg-black bg-opacity-95 shadow-md py-2"
           : "bg-transparent py-4"
       }`}
     >
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold font-display text-construction-900">
+          <h1 className="text-2xl font-bold font-display text-white">
             <span className="text-accent-600">Elite</span> Builders
           </h1>
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="font-medium text-construction-600 hover:text-accent-600 transition-colors"
+                  className="font-medium text-white hover:text-accent-500 transition-colors"
                 >
                   {item}
                 </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-construction-800"
+          className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
@@ -72,13 +72,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white">
+        <div className="md:hidden bg-black">
           <ul className="py-4 px-6 space-y-4">
             {["Home", "Services", "Projects", "About", "Contact"].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="block py-2 font-medium text-construction-600 hover:text-accent-600 transition-colors"
+                  className="block py-2 font-medium text-white hover:text-accent-500 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item}

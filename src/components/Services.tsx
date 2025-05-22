@@ -57,14 +57,14 @@ const Services = () => {
     <section
       id="services"
       ref={sectionRef}
-      className="py-20 bg-gray-50"
+      className="py-20 bg-white"
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-6 heading-underline inline-block">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-6 heading-underline inline-block text-black">
             Our Services
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-800 max-w-2xl mx-auto">
             We offer comprehensive construction solutions tailored to meet your specific needs and vision.
           </p>
         </div>
@@ -82,7 +82,7 @@ const Services = () => {
                   <div className="flex justify-center">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-xl text-construction-800">
+                  <CardTitle className="text-xl text-black">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
